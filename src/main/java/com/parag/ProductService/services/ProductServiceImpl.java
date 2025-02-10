@@ -50,6 +50,10 @@ public class ProductServiceImpl implements ProductService {
         return productResponse;
     }
 
+    /*
+    * reduceQuantity method will take product id and the quantity need to be reduced.
+    * It checks if the quantity is sufficiently present or not.
+    *  */
     @Override
     public void reduceQuantity(long productId, long quantity) {
         log.info("Reduce quantity {} for id: {}", quantity, productId);
